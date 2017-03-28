@@ -1,0 +1,104 @@
+// imports
+@import 'font-proxima-nova';
+@import 'icons';
+
+// colors, mixins
+@purple: #5718D0;
+@blue: #17BDFF;
+@gray: #95989A;
+@white: #ffffff;
+// gradient
+//#17BDFF / #6F68F9
+.purple {color: @purple;}
+.blue {color: @blue;}
+.gray {color: @gray;}
+.white {color: @white;}
+.bg-purple {background: @purple;}
+.bg-blue {background: @blue;}
+.bg-gray {background: @gray;}
+.bg-white {background: @white;}
+.main-gradient {
+  background: linear-gradient(135deg, #17BDFF 20%, #6F68F9 80%);
+}
+
+// typography
+h1 {
+  color: #ffffff;
+  font-family: 'ProximaNova-semibold', Arial;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+// form elements
+input[type="text"], input[type="email"] {
+  padding: 20px 20px 20px 45px;
+  border: 0;
+  border-radius: 33px;
+  font-family: 'ProximaNova-semibold', Arial;
+  display: inline-block;
+  font-size: 16px;
+  min-width: 300px;
+  color: #000000;
+}
+input[type="submit"] {
+  padding: 20px;
+  border: 0;
+  border-radius: 10px;
+  font-family: 'ProximaNova-semibold', Arial;
+  display: inline-block;
+  min-width: 300px;
+}
+.input-email {
+  background: url('../img/email.svg') no-repeat 15px center #ffffff;
+  background-size: 20px;
+}
+.input-name {}
+
+// general declarations, layout elements
+body {
+  font-family: 'ProximaNova-regular', Arial;
+  font-size: 16px;
+}
+.container {
+  width: 1200px;
+}
+.top-section {
+  .main-gradient;
+  .white;
+  text-align: center;
+  min-height: 800px;
+  header {
+    padding: 20px 0;
+    .logo {
+      font-size: 60px;
+    }
+    .facebook-logo {
+      float: right;
+      margin-right: 10px;
+      span {font-size: 40px;}
+    }
+    .instagram-logo {
+      float: right;
+      span {font-size: 40px;}
+    }
+  }
+  .sub-headline {
+    margin: 0 auto;
+    max-width: 690px;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+}
+.pg-section {
+
+}
+.main-footer {
+
+}
+
+// unsorted
+.mockup-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 660px;
+}

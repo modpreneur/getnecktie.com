@@ -7,8 +7,7 @@
 @blue: #17BDFF;
 @gray: #95989A;
 @white: #ffffff;
-// gradient
-//#17BDFF / #6F68F9
+
 .purple {color: @purple;}
 .blue {color: @blue;}
 .gray {color: @gray;}
@@ -17,8 +16,13 @@
 .bg-blue {background: @blue;}
 .bg-gray {background: @gray;}
 .bg-white {background: @white;}
+// gradients
 .main-gradient {
   background: linear-gradient(135deg, #17BDFF 20%, #6F68F9 80%);
+}
+.grey-gradient {
+  //#f8f8f8
+  background: linear-gradient(180deg, #f8f8f8 20%, #ffffff 80%);
 }
 
 // typography
@@ -27,6 +31,18 @@ h1 {
   font-family: 'ProximaNova-semibold', Arial;
   max-width: 1000px;
   margin: 20px auto;
+}
+h2 {
+  font-family: 'ProximaNova-bold', Arial;
+}
+h3 {
+  font-family: 'ProximaNova-semibold', Arial;
+}
+.text-center {
+  text-align: center;
+}
+strong {
+  font-family: 'ProximaNova-bold', Arial;
 }
 
 // form elements
@@ -90,7 +106,7 @@ body {
   }
 }
 .pg-section {
-
+  padding: 40px 0;
 }
 .main-footer {
 
@@ -101,4 +117,19 @@ body {
   display: block;
   margin: 0 auto;
   max-width: 660px;
+}
+
+// BETA LANDING PAGE
+.section-2 {
+  h2 {
+    margin-bottom: 30px;
+  }
+  p {
+    max-width: 980px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+.section-3 {
+  .grey-gradient;
 }

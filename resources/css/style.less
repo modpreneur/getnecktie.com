@@ -136,13 +136,6 @@ body {
   font-size: 16px;
   height: 100%;
 }
-.container {
-  width: 1200px;
-}
-
-.section-3 .container {
-  width: 800px;
-}
 
 .top-section {
   .main-gradient;
@@ -188,7 +181,7 @@ body {
 .mockup-img {
   display: block;
   margin: 0 auto;
-  max-width: 660px;
+  width: auto;
 }
 .bordered {
   input:not([type="submit"]), textarea {
@@ -198,7 +191,7 @@ body {
 
 .top-section {
  p {
-   padding: 45px 0 90px 0;
+   padding: 45px 0 0 0;
  }
 }
 
@@ -214,4 +207,28 @@ body {
 }
 .section-3 {
   .grey-gradient;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .section-3 .container {
+    width: 800px;
+  }
+
+  .mockup-img {
+    max-width: 660px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .mockup-img {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
 }

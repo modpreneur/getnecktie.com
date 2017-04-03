@@ -288,12 +288,6 @@ body {
   font-size: 16px;
   height: 100%;
 }
-.container {
-  width: 1200px;
-}
-.section-3 .container {
-  width: 800px;
-}
 .top-section {
   background: linear-gradient(135deg, #17BDFF 20%, #6F68F9 80%);
   color: #ffffff;
@@ -340,14 +334,14 @@ body {
 .mockup-img {
   display: block;
   margin: 0 auto;
-  max-width: 660px;
+  width: auto;
 }
 .bordered input:not([type="submit"]),
 .bordered textarea {
   border: 2px solid #d3d3d3;
 }
 .top-section p {
-  padding: 45px 0 90px 0;
+  padding: 45px 0 0 0;
 }
 .section-2 h2 {
   margin-bottom: 30px;
@@ -358,4 +352,20 @@ body {
 }
 .section-3 {
   background: linear-gradient(180deg, #f8f8f8 20%, #ffffff 80%);
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .section-3 .container {
+    width: 800px;
+  }
+  .mockup-img {
+    max-width: 660px;
+  }
+}
+@media screen and (max-height: 600px) {
+  .mockup-img {
+    max-height: 300px;
+  }
 }

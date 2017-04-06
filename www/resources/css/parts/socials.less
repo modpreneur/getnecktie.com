@@ -1,0 +1,103 @@
+.socials{
+  a{
+    display: block;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 36px 0;
+    &:hover{
+      span{
+        opacity: 0.5;
+      }
+    }
+  }
+  p{
+    color: #ffffff;
+    font-family: "ProximaNova-bold";
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 25px;
+    line-height: 1.3;
+  }
+  span[class*="icon-"] {
+    color: #ffffff;
+    font-size: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+  }
+  .facebook-box{
+    background-image: url('../img/fb.png');
+    p{
+      max-width: 344px
+    }
+
+  }
+  .instagram-box{
+    background-image: url('../img/insta.png');
+    p{
+      max-width: 400px;
+    }
+    span[class*="icon-"] {
+      font-size: 73px;
+      line-height: 90px;
+      width: 90px;
+    }
+  }
+  @media (max-width: 1199px) {
+    p{
+      font-size: 21px;
+    }
+    .instagram-box{
+      p{
+        max-width: 344px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    a{
+      padding: 20px 0;
+    }
+  }
+  @media (max-width: 767px) {
+    a{
+      padding: 10px 0;
+    }
+    p{
+      font-size: 16px;
+    }
+    .facebook-box,.instagram-box{
+      p{
+        max-width: 260px;
+      }
+    }
+    span[class*="icon-"]{
+      font-size: 70px;
+    }
+    .instagram-box{
+      background-image: url('../img/insta.png');
+      span[class*="icon-"] {
+        font-size: 58px;
+        line-height: 70px;
+        width: 70px;
+      }
+    }
+  }
+  @media (max-width: 479px) {
+    p{
+      font-size: 14px;
+    }
+    .facebook-box,.instagram-box{
+      p{
+        max-width: 200px;
+      }
+    }
+  }
+}

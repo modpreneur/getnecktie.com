@@ -48,3 +48,8 @@
 */Entity/*~
 
 .idea
+log/*
+temp/*
+vendor/*
+!.htaccess
+app/config/config.local.neon

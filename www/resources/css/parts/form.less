@@ -1,0 +1,79 @@
+.form:extend(.status all){
+  .container{
+    max-width: 800px;
+  }
+  h2{
+    margin-bottom: 20px;
+  }
+  .grey-gradient;
+
+  // form elements
+  input[type="text"], input[type="email"], textarea {
+    padding: 15px 20px 15px 60px;
+    border: 2px solid #d3d3d3;
+    border-radius: 33px;
+    font-family: 'ProximaNova-semibold', Arial;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 300px;
+    color: #000000;
+    margin-bottom: 20px;
+    outline: none;
+    &:focus{
+      border-color: @purple;
+    }
+  }
+
+  div[class*="span-"] {
+    & > input, & > textarea {
+      width: 100%;
+    }
+  }
+
+  textarea {
+    min-height: 300px !important;
+    resize: none;
+    margin-bottom: 10px;
+  }
+
+  .input-email {
+    background: url('../img/email.svg') no-repeat 25px center #ffffff;
+    background-size: 20px;
+  }
+  .input-name {
+    background: url('../img/emoticon.svg') no-repeat 25px center #ffffff;
+    background-size: 20px;
+  }
+  .input-message {
+    background: url('../img/text.svg') no-repeat 25px 15px #ffffff;
+    background-size: 20px;
+  }
+  @media (max-width: 1023px) {
+    input[type="text"], input[type="email"], textarea {
+      margin-bottom: 16px;
+    }
+  }
+  @media (max-width: 767px) {
+    h2{
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="email"], textarea {
+      margin-bottom: 10px;
+    }
+    textarea{
+      min-height: 200px !important;
+    }
+  }
+  @media (max-width: 479px) {
+    padding-bottom: 20px;
+    input[type="text"], input[type="email"], textarea {
+      min-width: 0;
+      font-size: 14px;
+      border-radius: 20px;
+      padding: 10px 20px 10px 60px;
+    }
+    textarea{
+      min-height: 150px !important;
+    }
+  }
+}

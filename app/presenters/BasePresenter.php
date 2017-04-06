@@ -52,7 +52,7 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
         $mailer = new SendmailMailer;
         $mail = new Message;
         $mail->setFrom('Automat GetNecktie.com <automat@getnecktie.com>')
-            ->addTo('martin.drozdek@gmail.com')
+            ->addTo('vaclav@getnecktie.com')
             ->setSubject('New request from getnecktie.com '.$date)
             ->setHtmlBody($latte->renderToString('../app/presenters/templates/email.latte', $params));
 

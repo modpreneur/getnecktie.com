@@ -54,7 +54,7 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
         $mail->setFrom('Automat GetNecktie.com <automat@getnecktie.com>')
             ->addTo('vaclav@getnecktie.com')
             ->setSubject('New request from getnecktie.com '.$date)
-            ->setHtmlBody($latte->renderToString('../app/presenters/templates/email.latte', $params));
+            ->setHtmlBody($latte->renderToString(__DIR__.'/../app/presenters/templates/email.latte', $params));
 
         try{
             $mailer->send($mail);

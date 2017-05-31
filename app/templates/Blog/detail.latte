@@ -1,0 +1,104 @@
+{block content}
+    <section class="content">
+        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-photo.png);"></div>
+        <div class="filter"></div>
+        <div class="gradient"></div>
+        <div class="container">
+            <header class="row">
+                <div class="span-mini-12 text-left">
+                    <a n:href="Homepage:">
+                        <span class="icon icon-logo logo"></span>
+                    </a>
+                </div>
+                <div class="span-mini-12 text-right">
+                    <ul>
+                        <li><a n:href="Blog:" class="active">Blog</a></li>
+                        <li><a n:href="Contact:">Contact</a></li>
+                    </ul>
+                    <a href="https://www.facebook.com/getnecktie" rel="_blank" class="icon facebook">
+                        <span class="icon-uniE909"></span>
+                    </a>
+                    <a href="https://www.instagram.com/getnecktie/" rel="_blank" class="icon instagram">
+                        <span class="icon-Group-152"></span>
+                    </a>
+                </div>
+            </header>
+            <div class="row">
+                <div class="span-large-24">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque erat in ex aliquam tincidunt.</h1>
+                    <p>5 minut čtení</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="span-large-24">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque erat in ex aliquam tincidunt. Aliquam erat volutpat. Phasellus rutrum turpis in blandit elementum. In eu eleifend nisl. Nullam dictum vehicula neque, nec congue metus. Etiam varius ullamcorper condimentum. Morbi imperdiet odio eu molestie tincidunt. Morbi quis suscipit purus. In sed volutpat orci, nec feugiat massa. In hac habitasse platea dictumst. Pellentesque porta sapien nec elit tristique efficitur. Aliquam erat volutpat. Donec eget lacinia nunc.</p>
+                    <p>Vivamus in velit sit amet tellus fringilla blandit. Proin placerat vel quam vel fringilla. Vivamus suscipit commodo eros, vel tempus sem aliquet sodales. Nunc sit amet fermentum ipsum. Donec ut commodo libero. Sed turpis purus, hendrerit ut libero nec, mattis ornare est. Suspendisse porttitor magna quis sollicitudin fermentum. Phasellus non urna lacus. Etiam in ultricies lectus, eu laoreet tortor. Phasellus vel neque velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nec vehicula urna, in porttitor diam.</p>
+                    <img src="{$basePath}/resources/img/article-photo.png" alt="Photo" class="img-responsive photo"/>
+                    <p>Nulla facilisi. Sed nec suscipit lacus. Suspendisse felis turpis, congue ac ex nec, feugiat facilisis elit. In scelerisque porta lorem sit amet dictum. Praesent nisl sapien, pellentesque ut aliquet ac, elementum id tortor. Integer scelerisque sem vel ipsum dignissim malesuada. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque fringilla leo ac magna tristique tristique. Vestibulum ut metus eget augue lacinia tempor vitae et tortor. </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class="author">
+        <div class="container">
+            <div class="row">
+                <div class="span-large-24">
+                    <div class="box">
+                        <img src="{$basePath}/resources/img/author-photo.png" alt="Author" class="img-responsive photo" width="90"/>
+                        <h4>AUTHOR</h4>
+                        <h3><strong>Tomas Jancar</strong></h3>
+                        <p>apien, pellentesque ut aliquet ac, elementum id tortor. Integer scelerisque sem vel ipsum dignissim malesuada. Orci varius natoque penatibus et magnis dis parturient montes, nascetur </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="follow">
+        <div class="container">
+            <div class="row">
+                <div class="span-large-24">
+                    <form action="//getnecktie.us15.list-manage.com/subscribe/post?u=972099b5cef632db335e5dfeb&amp;id=3598af48ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL">Follow us today:</label>
+                            <div class="box">
+                                <span class="icon-ic_mail_outline_24px"></span>
+                                <input type="email" class="input-email" placeholder="Business E-mail" name="EMAIL" id="mce-EMAIL" required>
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe now</button>
+                            </div>
+                            <div id="mce-responses" class="clear" style="display:none">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_972099b5cef632db335e5dfeb_3598af48ea" tabindex="-1" value=""></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="row items">
+                <div class="span-none-padding-large-24">
+                    <h2>latest posts</h2>
+                    {for $i = 0; $i < 3; $i++}
+                        <div class="item">
+                            <div class="photo" style="background-image: url({$basePath}/resources/img/blog-thumbnail.png);"></div>
+                            <div class="text">
+                                <h2>What we learned from SCRUM</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat dolor, dignissim at magna eu, dictum imperdiet tortor.</p>
+                                <a n:href="Blog:detail" class="read-more"><span class="icon-ic_chevron_right_24px"></span></a>
+                            </div>
+                        </div>
+                    {/for}
+                </div>
+            </div>
+        </div>
+
+    </section>
+    {include '../socials.latte'}
+{/block}

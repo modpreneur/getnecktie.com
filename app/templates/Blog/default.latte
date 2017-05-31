@@ -1,0 +1,62 @@
+{block content}
+    <section class="content">
+        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-photo.png);"></div>
+        <div class="filter"></div>
+        <div class="container">
+            <header class="row">
+                <div class="span-mini-12 text-left">
+                    <a n:href="Homepage:">
+                        <span class="icon icon-logo logo"></span>
+                    </a>
+                </div>
+                <div class="span-mini-12 text-right">
+                    <ul>
+                        <li><a n:href="Blog:" class="active">Blog</a></li>
+                        <li><a n:href="Contact:">Contact</a></li>
+                    </ul>
+                    <a href="https://www.facebook.com/getnecktie" rel="_blank" class="icon facebook">
+                        <span class="icon-uniE909"></span>
+                    </a>
+                    <a href="https://www.instagram.com/getnecktie/" rel="_blank" class="icon instagram">
+                        <span class="icon-Group-152"></span>
+                    </a>
+                </div>
+            </header>
+            <div class="row">
+                <div class="span-large-24">
+                    <h1>Blog</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="row tags">
+                <div class="span-large-24">
+                    <p>Popular tags</p>
+                    <a href="#">#Development</a>
+                    <a href="#">#Javascript</a>
+                    <a href="#">#TeamLife</a>
+                    <a href="#">#Learning</a>
+                    <a href="#">#BUGs</a>
+                </div>
+            </div>
+            <div class="row items">
+                <div class="span-none-padding-large-24">
+                    {for $i = 0; $i < 9; $i++}
+                    <div class="item">
+                        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-thumbnail.png);"></div>
+                        <div class="text">
+                            <h2>What we learned from SCRUM</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat dolor, dignissim at magna eu, dictum imperdiet tortor.</p>
+                            <a n:href="Blog:detail" class="read-more"><span class="icon-ic_chevron_right_24px"></span></a>
+                        </div>
+                    </div>
+                    {/for}
+                </div>
+            </div>
+        </div>
+
+    </section>
+    {include '../socials.latte'}
+{/block}

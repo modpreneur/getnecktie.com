@@ -12,7 +12,7 @@
     .main-gradient;
     .white;
     text-align: center;
-    padding-bottom: 80px;
+    padding-bottom: 58px;
     header {
       padding: 20px 0;
       .logo {
@@ -20,14 +20,79 @@
         font-size: 45px;
       }
       .text-right {
-        a {
+        ul{
+          display: inline-block;
+          vertical-align: top;
+          li{
+            display: inline-block;
+            top: 6px;
+            position: relative;
+            a{
+              text-transform: uppercase;
+              border-radius: 999px;
+              color: #fff;
+              font-size: 18px;
+              font-family: 'ProximaNova-bold', Arial;
+              line-height: 1;
+              padding: 9px 10px;
+              -webkit-transition: all 500ms;
+              -moz-transition: all 500ms;
+              -ms-transition: all 500ms;
+              -o-transition: all 500ms;
+              transition: all 500ms;
+
+              &.active{
+                background-color: @purple;
+              }
+              &:hover{
+                background-color: @purple;
+              }
+            }
+            margin-left: 10px;
+            &:first-child{
+              margin-left: 0;
+            }
+          }
+        }
+        .icon{
+          vertical-align: top;
           display: inline-block;
           font-size: 40px;
           margin-left: 10px;
+          text-align: center;
+          border-radius: 999px;
+          background-color: @purple;
+          color: #fff;
+          width: 36px;
+          height: 36px;
+          line-height: 1;
+          -webkit-transition: all 500ms;
+          -moz-transition: all 500ms;
+          -ms-transition: all 500ms;
+          -o-transition: all 500ms;
+          transition: all 500ms;
+          &:hover{
+            background-color: darken(@purple,15);
+          }
+
           &:first-child {
             margin-left: 0;
           }
         }
+        .facebook{
+          span{
+            position: relative;
+            left: -2px;
+          }
+        }
+        .instagram{
+          span{
+            position: relative;
+            top: -5px;
+            font-size: 19px;
+          }
+        }
+
       }
     }
     h1 {
@@ -64,23 +129,7 @@
         }
       }
     }
-    input[type="text"], input[type="email"], textarea {
-      padding: 15px 20px 15px 60px;
-      border-radius: 33px;
-      font-family: 'ProximaNova-semibold', Arial;
-      display: inline-block;
-      font-size: 16px;
-      width: 100%;
-      color: #000000;
-      margin-bottom: 20px;
-      outline: none;
-      background: url('../img/email.svg') no-repeat 25px center #ffffff;
-      background-size: 20px;
-      border: 2px solid #fff;
-      &:focus {
-        border-color: @purple;
-      }
-    }
+
     .counter {
       margin: 10px 0;
       span {
@@ -96,6 +145,165 @@
         box-shadow: 0 12px 12px rgba(0, 0, 0, 0.23);
       }
     }
+
+    .video{
+      position: relative;
+      margin: auto;
+      width: 864px;
+      height: auto;
+      padding: 12px;
+      border-radius: 13px;
+      background: rgba(76,213,255,1);
+      background: -moz-linear-gradient(-45deg, rgba(76,213,255,1) 0%, rgba(123,167,255,1) 100%);
+      background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,213,255,1)), color-stop(100%, rgba(123,167,255,1)));
+      background: -webkit-linear-gradient(-45deg, rgba(76,213,255,1) 0%, rgba(123,167,255,1) 100%);
+      background: -o-linear-gradient(-45deg, rgba(76,213,255,1) 0%, rgba(123,167,255,1) 100%);
+      background: -ms-linear-gradient(-45deg, rgba(76,213,255,1) 0%, rgba(123,167,255,1) 100%);
+      background: linear-gradient(135deg, rgba(76,213,255,1) 0%, rgba(123,167,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cd5ff', endColorstr='#7ba7ff', GradientType=1 );
+
+      img{
+        display: block;
+      }
+      .overlay{
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        width: 837px;
+        height: 460px;
+        background-color: fade(#000,21);
+        display: block;
+        padding: 12px;
+        img{
+          position: relative;
+          top: 20px;
+        }
+        a{
+          display: block;
+          width: 196px;
+          height: 196px;
+          margin: 120px auto 0;
+          border-radius: 999px;
+          padding: 8px;
+          -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.34);
+          -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.34);
+          box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.34);
+          background: rgba(255,255,255,1);
+          background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(214,214,214,1)));
+          background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+          background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+          background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+          background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6', GradientType=0 );;
+
+          .outer{
+            display: block;
+            width: 180px;
+            height: 180px;
+            border-radius: 999px;
+            background: rgba(23,188,255,1);
+            background: -moz-linear-gradient(top, rgba(23,188,255,1) 0%, rgba(104,99,235,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,188,255,1)), color-stop(100%, rgba(104,99,235,1)));
+            background: -webkit-linear-gradient(top, rgba(23,188,255,1) 0%, rgba(104,99,235,1) 100%);
+            background: -o-linear-gradient(top, rgba(23,188,255,1) 0%, rgba(104,99,235,1) 100%);
+            background: -ms-linear-gradient(top, rgba(23,188,255,1) 0%, rgba(104,99,235,1) 100%);
+            background: linear-gradient(to bottom, rgba(23,188,255,1) 0%, rgba(104,99,235,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17bcff', endColorstr='#6863eb', GradientType=0 );
+            -webkit-transition: all 500ms;
+            -moz-transition: all 500ms;
+            -ms-transition: all 500ms;
+            -o-transition: all 500ms;
+            transition: all 500ms;
+          }
+
+          .inner{
+            position: relative;
+            margin: 0 auto;
+            top: 18px;
+            display: block;
+            width: 144px;
+            height: 144px;
+            border-radius: 999px;
+            background: rgba(23,187,254,1);
+            background: -moz-linear-gradient(top, rgba(23,187,254,1) 0%, rgba(111,104,249,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,187,254,1)), color-stop(100%, rgba(111,104,249,1)));
+            background: -webkit-linear-gradient(top, rgba(23,187,254,1) 0%, rgba(111,104,249,1) 100%);
+            background: -o-linear-gradient(top, rgba(23,187,254,1) 0%, rgba(111,104,249,1) 100%);
+            background: -ms-linear-gradient(top, rgba(23,187,254,1) 0%, rgba(111,104,249,1) 100%);
+            background: linear-gradient(to bottom, rgba(23,187,254,1) 0%, rgba(111,104,249,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#17bbfe', endColorstr='#6f68f9', GradientType=0 );
+            -webkit-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.16);
+            -moz-box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.16);
+            box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.16);
+            -webkit-transition: all 500ms;
+            -moz-transition: all 500ms;
+            -ms-transition: all 500ms;
+            -o-transition: all 500ms;
+            transition: all 500ms;
+            span{
+              position: relative;
+              display: block;
+              top: 52px;
+              left: 0px;
+              font-size: 40px;
+              color: #fff;
+              -webkit-transition: all 500ms;
+              -moz-transition: all 500ms;
+              -ms-transition: all 500ms;
+              -o-transition: all 500ms;
+              transition: all 500ms;
+            }
+          }
+
+          &:hover{
+            .outer{
+              -webkit-transform: rotate(180deg);
+              -moz-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+              -o-transform: rotate(180deg);
+              transform: rotate(180deg);
+            }
+            .inner{
+              -webkit-transform: rotate(-360deg);
+              -moz-transform: rotate(-360deg);
+              -ms-transform: rotate(-360deg);
+              -o-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+              span{
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+              }
+            }
+          }
+          &.spinner{
+            .outer{
+              -webkit-animation: rotate 2s infinite linear;
+              animation: rotate 2s infinite linear;
+            }
+            .inner{
+              -webkit-animation: rotate-pre 1s infinite linear;
+              animation: rotate-pre 1s infinite linear;
+              span{
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+      iframe{
+        display: block;
+        max-width: 100%;
+      }
+
+    }
+    .follow{
+      margin-top: 40px;
+    }
+
 
     @media (max-width: 1199px) {
       h1 {
@@ -121,12 +329,51 @@
         padding-top: 0px;
       }
 
+      .video{
+        width: 700px;
+        padding: 8px;
+        img{
+          max-width: 100%;
+        }
+        .overlay{
+          top: 8px;
+          left: 8px;
+          width: 684px;
+          height: 376px;
+          a{
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 101px auto 0;
+            padding: 6px;
+            .outer{
+              width: 138px;
+              height: 138px;
+            }
+            .inner{
+              top: 18px;
+              width: 102px;
+              height: 102px;
+              span{
+                top: 41px;
+                left: 0px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        iframe{
+          width: 684px;
+          height: 376px;
+        }
+      }
+
     }
     @media (max-width: 767px) {
       .background-image{
         display: none;
       }
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       h1 {
         font-size: 26px;
         padding-top: 0;
@@ -148,6 +395,60 @@
         margin-top: 0;
       }
 
+      .video{
+        width: 420px;
+        padding: 6px;
+
+        .overlay{
+          top: 6px;
+          left: 6px;
+          width: 408px;
+          height: 224px;
+          a{
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 60px auto 0;
+            padding: 6px;
+            .outer{
+              width: 68px;
+              height: 68px;
+            }
+            .inner{
+              top: 5px;
+              width: 58px;
+              height: 58px;
+              span{
+                top: 20px;
+                left: 0px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        iframe{
+          width: 408px;
+          height: 224px;
+        }
+      }
+
+      header{
+        padding: 10px 0;
+        .logo{
+          font-size: 40px;
+        }
+        ul{
+          position: relative;
+          top: 5px;
+        }
+        .text-right .icon{
+          display: none;
+        }
+      }
+      .follow{
+        margin-top: 20px;
+      }
+
     }
     @media (max-width: 479px) {
       padding-bottom: 20px;
@@ -158,16 +459,61 @@
       header {
         padding: 10px 0;
         .logo {
-          font-size: 35px;
+          font-size: 30px;
         }
         .text-right{
+          padding-left: 0;
           a{
             font-size: 30px;
+          }
+          ul{
+            top: 2px;
+            li a{
+              font-size: 14px;
+              padding: 4px 4px;
+            }
           }
         }
       }
       .mockup-img {
         margin: 10px auto;
+      }
+
+      .video{
+        width: 280px;
+        padding: 6px;
+
+        .overlay{
+          top: 6px;
+          left: 6px;
+          width: 268px;
+          height: 147px;
+          a{
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 26px auto 0;
+            padding: 6px;
+            .outer{
+              width: 68px;
+              height: 68px;
+            }
+            .inner{
+              top: 5px;
+              width: 58px;
+              height: 58px;
+              span{
+                top: 20px;
+                left: 0px;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        iframe{
+          width: 268px;
+          height: 147px;
+        }
       }
     }
   }

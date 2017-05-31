@@ -1,5 +1,7 @@
 {block content}
     <section class="content">
+        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-photo.png);"></div>
+        <div class="filter"></div>
         <div class="container">
             <header class="row">
                 <div class="span-mini-12 text-left">
@@ -8,6 +10,10 @@
                     </a>
                 </div>
                 <div class="span-mini-12 text-right">
+                    <ul>
+                        <li><a n:href="Blog:">Blog</a></li>
+                        <li><a n:href="Contact:" class="active">Contact</a></li>
+                    </ul>
                     <a href="https://www.facebook.com/getnecktie" rel="_blank" class="icon facebook">
                         <span class="icon-uniE909"></span>
                     </a>
@@ -18,16 +24,11 @@
             </header>
             <div class="row">
                 <div class="span-large-24">
-                    <h1>Thank you for your attention.</h1>
-                    <img class="mockup-img" src="{$basePath}/resources/img/mockup.png" alt="Necktie">
-                    <a n:href="Homepage:">
-                    <span class="btn">
-                        <input type="submit" name="send-email" value="BACK">
-                    </span>
-                    </a>
+                    <h1>Contact</h1>
                 </div>
             </div>
         </div>
     </section>
+    {include '../form.latte'}
+    {include '../socials.latte'}
 {/block}
-{block footer}{/block}

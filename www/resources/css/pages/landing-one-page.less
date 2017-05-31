@@ -100,12 +100,42 @@
         display: none;
       }
       .text-right {
-        a {
+        .icon{
+          vertical-align: top;
           display: inline-block;
           font-size: 40px;
           margin-left: 10px;
+          text-align: center;
+          border-radius: 999px;
+          background-color: @purple;
+          color: #fff;
+          width: 36px;
+          height: 36px;
+          line-height: 1;
+          -webkit-transition: all 500ms;
+          -moz-transition: all 500ms;
+          -ms-transition: all 500ms;
+          -o-transition: all 500ms;
+          transition: all 500ms;
+          &:hover{
+            background-color: darken(@purple,15);
+          }
+
           &:first-child {
             margin-left: 0;
+          }
+        }
+        .facebook{
+          span{
+            position: relative;
+            left: -2px;
+          }
+        }
+        .instagram{
+          span{
+            position: relative;
+            top: -5px;
+            font-size: 19px;
           }
         }
       }

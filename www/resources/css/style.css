@@ -2215,6 +2215,7 @@ footer p {
 .blog-page .posts .items .item .photo,
 .blog-detail-page .posts .items .item .photo {
   position: relative;
+  display: block;
   height: 220px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2225,25 +2226,29 @@ footer p {
 }
 .blog-page .posts .items .item .text,
 .blog-detail-page .posts .items .item .text {
+  display: block;
   padding: 30px 24px 20px;
 }
-.blog-page .posts .items .item .text h2,
-.blog-detail-page .posts .items .item .text h2 {
+.blog-page .posts .items .item .text .h2,
+.blog-detail-page .posts .items .item .text .h2 {
+  display: block;
   font-size: 21px;
   font-family: 'ProximaNova-bold', Arial;
   margin: 0;
   padding: 0;
   line-height: 1;
   padding-bottom: 16px;
+  color: #000;
 }
-.blog-page .posts .items .item .text p,
-.blog-detail-page .posts .items .item .text p {
+.blog-page .posts .items .item .text .p,
+.blog-detail-page .posts .items .item .text .p {
+  display: block;
   font-size: 15px;
   color: #6A6A6A;
   margin-bottom: 6px;
 }
-.blog-page .posts .items .item .text a,
-.blog-detail-page .posts .items .item .text a {
+.blog-page .posts .items .item .text .read-more,
+.blog-detail-page .posts .items .item .text .read-more {
   position: relative;
   top: 0;
   left: 0;
@@ -2260,16 +2265,16 @@ footer p {
   -o-transition: all 500ms;
   transition: all 500ms;
 }
-.blog-page .posts .items .item .text a:hover,
-.blog-detail-page .posts .items .item .text a:hover {
-  background-color: #0090c9;
-}
-.blog-page .posts .items .item .text a span,
-.blog-detail-page .posts .items .item .text a span {
+.blog-page .posts .items .item .text .read-more span,
+.blog-detail-page .posts .items .item .text .read-more span {
   position: relative;
   top: 9px;
   left: 1px;
   font-size: 12px;
+}
+.blog-page .posts .items .item .text:hover .read-more,
+.blog-detail-page .posts .items .item .text:hover .read-more {
+  background-color: #0090c9;
 }
 @media (max-width: 1023px) {
   .blog-page .posts .tags,
@@ -2329,13 +2334,13 @@ footer p {
   .blog-detail-page .posts .items .item .text {
     padding: 10px 12px 10px;
   }
-  .blog-page .posts .items .item .text h2,
-  .blog-detail-page .posts .items .item .text h2 {
+  .blog-page .posts .items .item .text .h2,
+  .blog-detail-page .posts .items .item .text .h2 {
     font-size: 18px;
     padding-bottom: 8px;
   }
-  .blog-page .posts .items .item .text p,
-  .blog-detail-page .posts .items .item .text p {
+  .blog-page .posts .items .item .text .p,
+  .blog-detail-page .posts .items .item .text .p {
     font-size: 14px;
     line-height: 1;
   }

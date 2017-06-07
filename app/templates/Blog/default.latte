@@ -44,14 +44,14 @@
             <div class="row items">
                 <div class="span-none-padding-large-24">
                     {for $i = 0; $i < 9; $i++}
-                    <div class="item">
-                        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-thumbnail.png);"></div>
-                        <div class="text">
-                            <h2>What we learned from SCRUM</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat dolor, dignissim at magna eu, dictum imperdiet tortor.</p>
-                            <a n:href="Blog:detail" class="read-more"><span class="icon-ic_chevron_right_24px"></span></a>
-                        </div>
-                    </div>
+                        <a n:href="Blog:detail" class="item">
+                            <span class="photo" style="background-image: url({$basePath}/resources/img/blog-thumbnail.png);"></span>
+                            <span class="text">
+                            <span class="h2">What we learned from SCRUM</span>
+                            <span class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus erat dolor, dignissim at magna eu, dictum imperdiet tortor.</span>
+                            <span class="read-more"><span class="icon-ic_chevron_right_24px"></span></span>
+                        </span>
+                        </a>
                     {/for}
                 </div>
             </div>

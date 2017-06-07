@@ -76,6 +76,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8', GradientType=0 );
         .photo{
           position: relative;
+          display: block;
           height: 220px;
           background-size: cover;
           background-repeat: no-repeat;
@@ -85,21 +86,25 @@
           box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.17);
         }
         .text{
+          display: block;
           padding: 30px 24px 20px;
-          h2{
+          .h2{
+            display: block;
             font-size: 21px;
             font-family: 'ProximaNova-bold', Arial;
             margin: 0;
             padding: 0;
             line-height: 1;
             padding-bottom: 16px;
+            color: #000;
           }
-          p{
+          .p{
+            display: block;
             font-size: 15px;
             color: #6A6A6A;
             margin-bottom: 6px;
           }
-          a{
+          .read-more{
             position: relative;
             top: 0;
             left: 0;
@@ -115,14 +120,16 @@
             -ms-transition: all 500ms;
             -o-transition: all 500ms;
             transition: all 500ms;
-            &:hover{
-              background-color: darken(#17BDFF,15);
-            }
             span{
               position: relative;
               top: 9px;
               left: 1px;
               font-size: 12px;
+            }
+          }
+          &:hover{
+            .read-more{
+              background-color: darken(#17BDFF,15);
             }
           }
         }
@@ -175,11 +182,11 @@
           }
           .text{
             padding: 10px 12px 10px;
-            h2{
+            .h2{
               font-size: 18px;
               padding-bottom: 8px;
             }
-            p{
+            .p{
               font-size: 14px;
               line-height: 1;
             }

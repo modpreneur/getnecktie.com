@@ -1,4 +1,4 @@
-<?php /* Template Name: Blog */
+<?php /* Template Name: Contact */
 
 $query = new WP_Query([
 

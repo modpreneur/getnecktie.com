@@ -19,7 +19,7 @@ class UIMacros extends \Latte\Macros\MacroSet
     /**
      * @param \Latte\Compiler $compiler
      */
-    public static function install(\Latte\Compiler $compiler): void
+    public static function install(\Latte\Compiler $compiler)
     {
         $me = new static($compiler);
 
@@ -35,7 +35,7 @@ class UIMacros extends \Latte\Macros\MacroSet
     /**
      * Initializes before template parsing.
      */
-    public function initialize(): void
+    public function initialize()
     {
         $this->extends = false;
     }

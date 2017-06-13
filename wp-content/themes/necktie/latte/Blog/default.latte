@@ -1,0 +1,88 @@
+{layout '../@layout.latte'}
+
+
+{block content}
+    <section class="content">
+        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-photo.png);"></div>
+        <div class="filter"></div>
+        <div class="container">
+            <header class="row">
+                <div class="span-mini-12 text-left">
+                    <a href="{$homeUrl}">
+                        <span class="icon icon-logo logo"></span>
+                    </a>
+                </div>
+                <div class="span-mini-12 text-right">
+                    {$necktie_main_menu|noescape}
+                    <a href="https://www.facebook.com/getnecktie" rel="_blank" class="icon facebook">
+                        <span class="icon-uniE909"></span>
+                    </a>
+                    <a href="https://www.instagram.com/getnecktie/" rel="_blank" class="icon instagram">
+                        <span class="icon-Group-152"></span>
+                    </a>
+                </div>
+            </header>
+            <div class="row">
+                <div class="span-large-24">
+                    <h1>Blog</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="row tags">
+                <div id="tags" class="span-large-24">
+                    <p>Popular tags</p>
+                    {foreach get_tags() as $tag}
+                        <a class="{$tag->slug}" href="#">#{$tag->name}</a>
+                    {/foreach}
+                    <a class="all" href="#">Show all</a>
+                </div>
+            </div>
+
+            <div class="row items">
+                <div class="span-none-padding-large-24">
+                    {include 'posts.latte'}
+                </div>
+            </div>
+        </div>
+    </section>
+    {include '../socials.latte'}
+{/block}
+
+
+{block scripts}
+    {include parent}
+
+    <script>
+        $(document).ready(function () {
+
+            var cls = [];
+            $('#tags').find('a').each(function(){
+                cls.push(this.className);
+            });
+
+            $('#tags a').click(function (e) {
+                e.preventDefault();
+                $('#tags a').removeAttr('status');
+                $(this).attr('data-status', 'active');
+
+                var elCLass = $(this).attr('class');
+
+                for(var i = 0; i < cls.length; i++) {
+                    if (cls[i] !== elCLass) {
+                        $('.post-item.' + cls[i]).fadeOut();
+                    } else {
+                        $('.post-item.' + cls[i]).fadeIn();
+                    }
+                }
+
+                if (elCLass == 'all') {
+                    $('.post-item').fadeIn();
+                }
+            });
+        });
+    </script>
+
+{/block}

@@ -1,0 +1,16 @@
+{foreach $posts as $itemPost}
+    <a href="{link $itemPost}" class="post-item item {necktie_post_tags($itemPost)}">
+
+        {if has_post_thumbnail($itemPost->ID)}
+            <span class="photo" style="background-image: url('{get_the_post_thumbnail_url($itemPost, [352, 220])|noescape}');"></span>
+        {/if}
+
+        <span class="text">
+            <span class="h2">{$itemPost->post_title}</span>
+            <span class="p">{necktie_the_excerpt($itemPost)}</span>
+            <span class="read-more">
+                <span class="icon-ic_chevron_right_24px"></span>
+            </span>
+        </span>
+    </a>
+{/foreach}

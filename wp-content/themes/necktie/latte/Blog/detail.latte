@@ -1,0 +1,95 @@
+{layout '../@layout.latte'}
+
+{block content}
+    <section class="content">
+        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-photo.png);"></div>
+        <div class="filter"></div>
+        <div class="gradient"></div>
+        <div class="container">
+            <header class="row">
+                <div class="span-mini-12 text-left">
+                    <a href="{$homeUrl}">
+                        <span class="icon icon-logo logo"></span>
+                    </a>
+                </div>
+                <div class="span-mini-12 text-right">
+                    {$necktie_main_menu|noescape}
+                    <a href="https://www.facebook.com/getnecktie" rel="_blank" class="icon facebook">
+                        <span class="icon-uniE909"></span>
+                    </a>
+                    <a href="https://www.instagram.com/getnecktie/" rel="_blank" class="icon instagram">
+                        <span class="icon-Group-152"></span>
+                    </a>
+                </div>
+            </header>
+            <div class="row">
+                <div class="span-large-24">
+                    <h1>{$post->post_title}</h1>
+                    <p>{$readingTime|noescape}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="span-large-24">
+                    {(necktie_the_content($post))|noescape}
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class="author">
+        <div class="container">
+            <div class="row">
+                <div class="span-large-24">
+                    <div class="box">
+                        {if $userImage}
+                            <img src="{$userImage}" alt="Author" class="img-responsive photo" width="90"/>
+                        {/if}
+                        <h4>AUTHOR</h4>
+                        <h3><a href="{$userProfileUrl}"><strong>{$author}</strong></a></h3>
+                        {if $user->description}
+                            <p>{$user->description}</p>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="follow">
+        <div class="container">
+            <div class="row">
+                <div class="span-large-24">
+                    <form action="//getnecktie.us15.list-manage.com/subscribe/post?u=972099b5cef632db335e5dfeb&amp;id=3598af48ea" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL">Follow us today:</label>
+                            <div class="box">
+                                <span class="icon-ic_mail_outline_24px"></span>
+                                <input type="email" class="input-email" placeholder="Business E-mail" name="EMAIL" id="mce-EMAIL" required>
+                                <button type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe now</button>
+                            </div>
+                            <div id="mce-responses" class="clear" style="display:none">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_972099b5cef632db335e5dfeb_3598af48ea" tabindex="-1" value=""></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="posts">
+        <div class="container">
+            <div class="row items">
+                <div class="span-none-padding-large-24">
+                    <h2>latest posts</h2>
+                    {include 'posts.latte', 'posts' => $lastPosts}
+                </div>
+            </div>
+        </div>
+
+    </section>
+    {include '../socials.latte'}
+{/block}

@@ -1,0 +1,50 @@
+{layout '../@layout.latte'}
+
+{block content}
+    <section class="content">
+        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-photo.png);"></div>
+        <div class="filter"></div>
+        <div class="container">
+            <header class="row">
+                <div class="span-mini-12 text-left">
+                    <a href="{$homeUrl}">
+                        <span class="icon icon-logo logo"></span>
+                    </a>
+                </div>
+                <div class="span-mini-12 text-right">
+                    {$necktie_main_menu|noescape}
+                    <a href="https://www.facebook.com/getnecktie" rel="_blank" class="icon facebook">
+                        <span class="icon-uniE909"></span>
+                    </a>
+                    <a href="https://www.instagram.com/getnecktie/" rel="_blank" class="icon instagram">
+                        <span class="icon-Group-152"></span>
+                    </a>
+                </div>
+            </header>
+            <div class="row">
+                <div class="span-large-24">
+                    <h1>{$user->user_nicename}</h1>
+                    <p>
+                        {$user->description}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="posts">
+        <div class="container">
+            <div class="row">
+                <div id="tags" class="span-large-24">
+                    <p>Author:</p>
+                </div>
+            </div>
+        </div>
+        <div class="row items">
+            <div class="span-none-padding-large-24">
+                {include "../Blog/posts.latte"}
+            </div>
+        </div>
+    </section>
+    {include '../socials.latte'}
+{/block}

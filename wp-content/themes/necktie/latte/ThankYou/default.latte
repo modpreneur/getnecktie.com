@@ -1,0 +1,38 @@
+{layout '../@layout.latte'}
+
+
+{block content}
+    <section class="content">
+        <div class="container">
+            <header class="row">
+                <div class="span-mini-12 text-left">
+                    <a href="{$homeUrl}">
+                        <span class="icon icon-logo logo"></span>
+                    </a>
+                </div>
+                <div class="span-mini-12 text-right">
+                    <a href="https://www.facebook.com/getnecktie" rel="_blank" class="icon facebook">
+                        <span class="icon-uniE909"></span>
+                    </a>
+                    <a href="https://www.instagram.com/getnecktie/" rel="_blank" class="icon instagram">
+                        <span class="icon-Group-152"></span>
+                    </a>
+                </div>
+            </header>
+            <div class="row">
+                <div class="span-large-24">
+                    <h1>Thank you for your attention.</h1>
+                    <img class="mockup-img" src="{$basePath}/resources/img/mockup.png" alt="Necktie">
+                    <a href="{$homeUrl}">
+                    <span class="btn">
+                        <input type="submit" name="send-email" value="BACK">
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+{/block}
+
+
+{block footer}{/block}

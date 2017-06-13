@@ -32,6 +32,7 @@ class Renderer
             'basePath' => esc_url( get_template_directory_uri()),
             'flashes'  => [],
             'homeUrl'  => \esc_url(\home_url('/')),
+            'is_user_logged_in'  => \is_user_logged_in(),
         ];
 
         UIMacros::install($latte->getCompiler());

@@ -42,7 +42,7 @@ class Renderer
      * @param $name
      * @param $value
      */
-    public function addParam(string $name, $value): void
+    public function addParam(string $name, $value)
     {
         $this->params[$name] = $value;
     }
@@ -52,7 +52,7 @@ class Renderer
      * @param string $template
      * @param array $params
      */
-    public function render(string $template, array $params = []): void
+    public function render(string $template, array $params = [])
     {
         $this->latte->render(__DIR__. '/../latte/' . $template . '.latte', \array_merge($this->params, $params));
     }

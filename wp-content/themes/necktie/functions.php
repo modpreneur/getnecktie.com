@@ -11,7 +11,7 @@ $renderer = new Renderer();
 
 \add_action( 'after_setup_theme', 'necktieSetup' );
 
-function necktieSetup(): void
+function necktieSetup()
 {
     \add_theme_support( 'post-thumbnails' );
 
@@ -33,7 +33,7 @@ function necktieSetup(): void
 
 add_action( 'phpmailer_init', 'mailerConfig', 10, 1);
 
-function mailerConfig(PHPMailer $mailer): void
+function mailerConfig(PHPMailer $mailer)
 {
     $mailer->isSMTP();
     $mailer->SMTPAuth = true;

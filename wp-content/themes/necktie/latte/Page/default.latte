@@ -27,7 +27,7 @@
     <section class="page-content">
         <div class="container">
             <h1>{$post->post_title}</h1>
-            {$post->post_content|noescape}
+            {necktie_the_content($post)|noescape}
         </div>
     </section>
 

@@ -933,6 +933,60 @@ footer p {
     padding-bottom: 20px;
   }
 }
+.page-page .page-content {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.page-page .page-content h1 {
+  color: #5718D0;
+  text-align: center;
+  size: 5em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.page-page .content {
+  position: relative;
+  background: none;
+  padding-bottom: 0px !important;
+}
+.page-page .content .photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: auto 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.page-page .content .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: auto 100%;
+  background-image: url('../img/filter-photo.png');
+  background-repeat: repeat-x;
+  background-position: top center;
+}
+.page-page .content h1 {
+  font-size: 70px;
+  font-family: 'ProximaNova-bold', Arial;
+  text-transform: uppercase;
+}
+@media (max-width: 1023px) {
+  .page-page .content h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .page-page .content h1 {
+    font-size: 28px;
+  }
+}
 .thank-you-page .content {
   background: linear-gradient(135deg, #17BDFF 20%, #6F68F9 80%);
   color: #ffffff;
@@ -1020,6 +1074,7 @@ footer p {
   }
 }
 .home-page .content,
+.page-page .content,
 .landing-two-page .content,
 .contact-page .content,
 .error-page .content,
@@ -1033,6 +1088,7 @@ footer p {
   padding-bottom: 58px;
 }
 .home-page .content .background-image,
+.page-page .content .background-image,
 .landing-two-page .content .background-image,
 .contact-page .content .background-image,
 .error-page .content .background-image,
@@ -1045,6 +1101,7 @@ footer p {
   height: auto;
 }
 .home-page .content header,
+.page-page .content header,
 .landing-two-page .content header,
 .contact-page .content header,
 .error-page .content header,
@@ -1053,6 +1110,7 @@ footer p {
   padding: 20px 0;
 }
 .home-page .content header .logo,
+.page-page .content header .logo,
 .landing-two-page .content header .logo,
 .contact-page .content header .logo,
 .error-page .content header .logo,
@@ -1062,6 +1120,7 @@ footer p {
   font-size: 45px;
 }
 .home-page .content header .text-right ul,
+.page-page .content header .text-right ul,
 .landing-two-page .content header .text-right ul,
 .contact-page .content header .text-right ul,
 .error-page .content header .text-right ul,
@@ -1071,6 +1130,7 @@ footer p {
   vertical-align: top;
 }
 .home-page .content header .text-right ul li,
+.page-page .content header .text-right ul li,
 .landing-two-page .content header .text-right ul li,
 .contact-page .content header .text-right ul li,
 .error-page .content header .text-right ul li,
@@ -1082,6 +1142,7 @@ footer p {
   margin-left: 10px;
 }
 .home-page .content header .text-right ul li a,
+.page-page .content header .text-right ul li a,
 .landing-two-page .content header .text-right ul li a,
 .contact-page .content header .text-right ul li a,
 .error-page .content header .text-right ul li a,
@@ -1101,6 +1162,7 @@ footer p {
   transition: all 500ms;
 }
 .home-page .content header .text-right ul li a.active,
+.page-page .content header .text-right ul li a.active,
 .landing-two-page .content header .text-right ul li a.active,
 .contact-page .content header .text-right ul li a.active,
 .error-page .content header .text-right ul li a.active,
@@ -1109,6 +1171,7 @@ footer p {
   background-color: #5718D0;
 }
 .home-page .content header .text-right ul li a:hover,
+.page-page .content header .text-right ul li a:hover,
 .landing-two-page .content header .text-right ul li a:hover,
 .contact-page .content header .text-right ul li a:hover,
 .error-page .content header .text-right ul li a:hover,
@@ -1117,6 +1180,7 @@ footer p {
   background-color: #5718D0;
 }
 .home-page .content header .text-right ul li:first-child,
+.page-page .content header .text-right ul li:first-child,
 .landing-two-page .content header .text-right ul li:first-child,
 .contact-page .content header .text-right ul li:first-child,
 .error-page .content header .text-right ul li:first-child,
@@ -1125,6 +1189,7 @@ footer p {
   margin-left: 0;
 }
 .home-page .content header .text-right .icon,
+.page-page .content header .text-right .icon,
 .landing-two-page .content header .text-right .icon,
 .contact-page .content header .text-right .icon,
 .error-page .content header .text-right .icon,
@@ -1148,6 +1213,7 @@ footer p {
   transition: all 500ms;
 }
 .home-page .content header .text-right .icon:hover,
+.page-page .content header .text-right .icon:hover,
 .landing-two-page .content header .text-right .icon:hover,
 .contact-page .content header .text-right .icon:hover,
 .error-page .content header .text-right .icon:hover,
@@ -1156,6 +1222,7 @@ footer p {
   background-color: #3a108b;
 }
 .home-page .content header .text-right .icon:first-child,
+.page-page .content header .text-right .icon:first-child,
 .landing-two-page .content header .text-right .icon:first-child,
 .contact-page .content header .text-right .icon:first-child,
 .error-page .content header .text-right .icon:first-child,
@@ -1164,6 +1231,7 @@ footer p {
   margin-left: 0;
 }
 .home-page .content header .text-right .facebook span,
+.page-page .content header .text-right .facebook span,
 .landing-two-page .content header .text-right .facebook span,
 .contact-page .content header .text-right .facebook span,
 .error-page .content header .text-right .facebook span,
@@ -1173,6 +1241,7 @@ footer p {
   left: -2px;
 }
 .home-page .content header .text-right .instagram span,
+.page-page .content header .text-right .instagram span,
 .landing-two-page .content header .text-right .instagram span,
 .contact-page .content header .text-right .instagram span,
 .error-page .content header .text-right .instagram span,
@@ -1183,6 +1252,7 @@ footer p {
   font-size: 19px;
 }
 .home-page .content h1,
+.page-page .content h1,
 .landing-two-page .content h1,
 .contact-page .content h1,
 .error-page .content h1,
@@ -1196,6 +1266,7 @@ footer p {
   line-height: 1.4;
 }
 .home-page .content .mockup-img,
+.page-page .content .mockup-img,
 .landing-two-page .content .mockup-img,
 .contact-page .content .mockup-img,
 .error-page .content .mockup-img,
@@ -1206,6 +1277,7 @@ footer p {
   max-width: 100%;
 }
 .home-page .content .right-text,
+.page-page .content .right-text,
 .landing-two-page .content .right-text,
 .contact-page .content .right-text,
 .error-page .content .right-text,
@@ -1214,6 +1286,7 @@ footer p {
   padding-top: 70px;
 }
 .home-page .content p,
+.page-page .content p,
 .landing-two-page .content p,
 .contact-page .content p,
 .error-page .content p,
@@ -1225,6 +1298,7 @@ footer p {
   margin: 0 auto;
 }
 .home-page .content .btn,
+.page-page .content .btn,
 .landing-two-page .content .btn,
 .contact-page .content .btn,
 .error-page .content .btn,
@@ -1233,6 +1307,7 @@ footer p {
   width: 100%;
 }
 .home-page .content .btn button,
+.page-page .content .btn button,
 .landing-two-page .content .btn button,
 .contact-page .content .btn button,
 .error-page .content .btn button,
@@ -1242,6 +1317,7 @@ footer p {
   width: 100%;
 }
 .home-page .content .btn button span,
+.page-page .content .btn button span,
 .landing-two-page .content .btn button span,
 .contact-page .content .btn button span,
 .error-page .content .btn button span,
@@ -1252,6 +1328,7 @@ footer p {
   display: block;
 }
 .home-page .content .counter,
+.page-page .content .counter,
 .landing-two-page .content .counter,
 .contact-page .content .counter,
 .error-page .content .counter,
@@ -1260,6 +1337,7 @@ footer p {
   margin: 10px 0;
 }
 .home-page .content .counter span,
+.page-page .content .counter span,
 .landing-two-page .content .counter span,
 .contact-page .content .counter span,
 .error-page .content .counter span,
@@ -1277,6 +1355,7 @@ footer p {
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.23);
 }
 .home-page .content .video,
+.page-page .content .video,
 .landing-two-page .content .video,
 .contact-page .content .video,
 .error-page .content .video,
@@ -1298,6 +1377,7 @@ footer p {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4cd5ff', endColorstr='#7ba7ff', GradientType=1);
 }
 .home-page .content .video img,
+.page-page .content .video img,
 .landing-two-page .content .video img,
 .contact-page .content .video img,
 .error-page .content .video img,
@@ -1306,6 +1386,7 @@ footer p {
   display: block;
 }
 .home-page .content .video .overlay,
+.page-page .content .video .overlay,
 .landing-two-page .content .video .overlay,
 .contact-page .content .video .overlay,
 .error-page .content .video .overlay,
@@ -1321,6 +1402,7 @@ footer p {
   padding: 12px;
 }
 .home-page .content .video .overlay img,
+.page-page .content .video .overlay img,
 .landing-two-page .content .video .overlay img,
 .contact-page .content .video .overlay img,
 .error-page .content .video .overlay img,
@@ -1330,6 +1412,7 @@ footer p {
   top: 20px;
 }
 .home-page .content .video .overlay a,
+.page-page .content .video .overlay a,
 .landing-two-page .content .video .overlay a,
 .contact-page .content .video .overlay a,
 .error-page .content .video .overlay a,
@@ -1354,6 +1437,7 @@ footer p {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d6d6d6', GradientType=0);
 }
 .home-page .content .video .overlay a .outer,
+.page-page .content .video .overlay a .outer,
 .landing-two-page .content .video .overlay a .outer,
 .contact-page .content .video .overlay a .outer,
 .error-page .content .video .overlay a .outer,
@@ -1378,6 +1462,7 @@ footer p {
   transition: all 500ms;
 }
 .home-page .content .video .overlay a .inner,
+.page-page .content .video .overlay a .inner,
 .landing-two-page .content .video .overlay a .inner,
 .contact-page .content .video .overlay a .inner,
 .error-page .content .video .overlay a .inner,
@@ -1408,6 +1493,7 @@ footer p {
   transition: all 500ms;
 }
 .home-page .content .video .overlay a .inner span,
+.page-page .content .video .overlay a .inner span,
 .landing-two-page .content .video .overlay a .inner span,
 .contact-page .content .video .overlay a .inner span,
 .error-page .content .video .overlay a .inner span,
@@ -1426,6 +1512,7 @@ footer p {
   transition: all 500ms;
 }
 .home-page .content .video .overlay a:hover .outer,
+.page-page .content .video .overlay a:hover .outer,
 .landing-two-page .content .video .overlay a:hover .outer,
 .contact-page .content .video .overlay a:hover .outer,
 .error-page .content .video .overlay a:hover .outer,
@@ -1438,6 +1525,7 @@ footer p {
   transform: rotate(180deg);
 }
 .home-page .content .video .overlay a:hover .inner,
+.page-page .content .video .overlay a:hover .inner,
 .landing-two-page .content .video .overlay a:hover .inner,
 .contact-page .content .video .overlay a:hover .inner,
 .error-page .content .video .overlay a:hover .inner,
@@ -1450,6 +1538,7 @@ footer p {
   transform: rotate(-360deg);
 }
 .home-page .content .video .overlay a:hover .inner span,
+.page-page .content .video .overlay a:hover .inner span,
 .landing-two-page .content .video .overlay a:hover .inner span,
 .contact-page .content .video .overlay a:hover .inner span,
 .error-page .content .video .overlay a:hover .inner span,
@@ -1462,6 +1551,7 @@ footer p {
   transform: rotate(180deg);
 }
 .home-page .content .video .overlay a.spinner .outer,
+.page-page .content .video .overlay a.spinner .outer,
 .landing-two-page .content .video .overlay a.spinner .outer,
 .contact-page .content .video .overlay a.spinner .outer,
 .error-page .content .video .overlay a.spinner .outer,
@@ -1471,6 +1561,7 @@ footer p {
   animation: rotate 2s infinite linear;
 }
 .home-page .content .video .overlay a.spinner .inner,
+.page-page .content .video .overlay a.spinner .inner,
 .landing-two-page .content .video .overlay a.spinner .inner,
 .contact-page .content .video .overlay a.spinner .inner,
 .error-page .content .video .overlay a.spinner .inner,
@@ -1480,6 +1571,7 @@ footer p {
   animation: rotate-pre 1s infinite linear;
 }
 .home-page .content .video .overlay a.spinner .inner span,
+.page-page .content .video .overlay a.spinner .inner span,
 .landing-two-page .content .video .overlay a.spinner .inner span,
 .contact-page .content .video .overlay a.spinner .inner span,
 .error-page .content .video .overlay a.spinner .inner span,
@@ -1488,6 +1580,7 @@ footer p {
   opacity: 0;
 }
 .home-page .content .video iframe,
+.page-page .content .video iframe,
 .landing-two-page .content .video iframe,
 .contact-page .content .video iframe,
 .error-page .content .video iframe,
@@ -1497,6 +1590,7 @@ footer p {
   max-width: 100%;
 }
 .home-page .content .follow,
+.page-page .content .follow,
 .landing-two-page .content .follow,
 .contact-page .content .follow,
 .error-page .content .follow,
@@ -1506,6 +1600,7 @@ footer p {
 }
 @media (max-width: 1199px) {
   .home-page .content h1,
+  .page-page .content h1,
   .landing-two-page .content h1,
   .contact-page .content h1,
   .error-page .content h1,
@@ -1516,6 +1611,7 @@ footer p {
 }
 @media (max-width: 1023px) {
   .home-page .content,
+  .page-page .content,
   .landing-two-page .content,
   .contact-page .content,
   .error-page .content,
@@ -1524,6 +1620,7 @@ footer p {
     padding-bottom: 40px;
   }
   .home-page .content h1,
+  .page-page .content h1,
   .landing-two-page .content h1,
   .contact-page .content h1,
   .error-page .content h1,
@@ -1534,6 +1631,7 @@ footer p {
     max-width: 700px;
   }
   .home-page .content .mockup-img,
+  .page-page .content .mockup-img,
   .landing-two-page .content .mockup-img,
   .contact-page .content .mockup-img,
   .error-page .content .mockup-img,
@@ -1545,6 +1643,7 @@ footer p {
     margin: 25% auto;
   }
   .home-page .content .right-text,
+  .page-page .content .right-text,
   .landing-two-page .content .right-text,
   .contact-page .content .right-text,
   .error-page .content .right-text,
@@ -1553,6 +1652,7 @@ footer p {
     padding-top: 0px;
   }
   .home-page .content .video,
+  .page-page .content .video,
   .landing-two-page .content .video,
   .contact-page .content .video,
   .error-page .content .video,
@@ -1562,6 +1662,7 @@ footer p {
     padding: 8px;
   }
   .home-page .content .video img,
+  .page-page .content .video img,
   .landing-two-page .content .video img,
   .contact-page .content .video img,
   .error-page .content .video img,
@@ -1570,6 +1671,7 @@ footer p {
     max-width: 100%;
   }
   .home-page .content .video .overlay,
+  .page-page .content .video .overlay,
   .landing-two-page .content .video .overlay,
   .contact-page .content .video .overlay,
   .error-page .content .video .overlay,
@@ -1581,6 +1683,7 @@ footer p {
     height: 376px;
   }
   .home-page .content .video .overlay a,
+  .page-page .content .video .overlay a,
   .landing-two-page .content .video .overlay a,
   .contact-page .content .video .overlay a,
   .error-page .content .video .overlay a,
@@ -1593,6 +1696,7 @@ footer p {
     padding: 6px;
   }
   .home-page .content .video .overlay a .outer,
+  .page-page .content .video .overlay a .outer,
   .landing-two-page .content .video .overlay a .outer,
   .contact-page .content .video .overlay a .outer,
   .error-page .content .video .overlay a .outer,
@@ -1602,6 +1706,7 @@ footer p {
     height: 138px;
   }
   .home-page .content .video .overlay a .inner,
+  .page-page .content .video .overlay a .inner,
   .landing-two-page .content .video .overlay a .inner,
   .contact-page .content .video .overlay a .inner,
   .error-page .content .video .overlay a .inner,
@@ -1612,6 +1717,7 @@ footer p {
     height: 102px;
   }
   .home-page .content .video .overlay a .inner span,
+  .page-page .content .video .overlay a .inner span,
   .landing-two-page .content .video .overlay a .inner span,
   .contact-page .content .video .overlay a .inner span,
   .error-page .content .video .overlay a .inner span,
@@ -1622,6 +1728,7 @@ footer p {
     font-size: 20px;
   }
   .home-page .content .video iframe,
+  .page-page .content .video iframe,
   .landing-two-page .content .video iframe,
   .contact-page .content .video iframe,
   .error-page .content .video iframe,
@@ -1633,6 +1740,7 @@ footer p {
 }
 @media (max-width: 767px) {
   .home-page .content,
+  .page-page .content,
   .landing-two-page .content,
   .contact-page .content,
   .error-page .content,
@@ -1641,6 +1749,7 @@ footer p {
     padding-bottom: 20px;
   }
   .home-page .content .background-image,
+  .page-page .content .background-image,
   .landing-two-page .content .background-image,
   .contact-page .content .background-image,
   .error-page .content .background-image,
@@ -1649,6 +1758,7 @@ footer p {
     display: none;
   }
   .home-page .content h1,
+  .page-page .content h1,
   .landing-two-page .content h1,
   .contact-page .content h1,
   .error-page .content h1,
@@ -1658,6 +1768,7 @@ footer p {
     padding-top: 0;
   }
   .home-page .content .mockup-img,
+  .page-page .content .mockup-img,
   .landing-two-page .content .mockup-img,
   .contact-page .content .mockup-img,
   .error-page .content .mockup-img,
@@ -1669,6 +1780,7 @@ footer p {
     margin: 0 auto;
   }
   .home-page .content .right-text,
+  .page-page .content .right-text,
   .landing-two-page .content .right-text,
   .contact-page .content .right-text,
   .error-page .content .right-text,
@@ -1679,6 +1791,7 @@ footer p {
     margin: 0 auto;
   }
   .home-page .content .counter,
+  .page-page .content .counter,
   .landing-two-page .content .counter,
   .contact-page .content .counter,
   .error-page .content .counter,
@@ -1687,6 +1800,7 @@ footer p {
     margin-top: 0;
   }
   .home-page .content .video,
+  .page-page .content .video,
   .landing-two-page .content .video,
   .contact-page .content .video,
   .error-page .content .video,
@@ -1696,6 +1810,7 @@ footer p {
     padding: 6px;
   }
   .home-page .content .video .overlay,
+  .page-page .content .video .overlay,
   .landing-two-page .content .video .overlay,
   .contact-page .content .video .overlay,
   .error-page .content .video .overlay,
@@ -1707,6 +1822,7 @@ footer p {
     height: 224px;
   }
   .home-page .content .video .overlay a,
+  .page-page .content .video .overlay a,
   .landing-two-page .content .video .overlay a,
   .contact-page .content .video .overlay a,
   .error-page .content .video .overlay a,
@@ -1719,6 +1835,7 @@ footer p {
     padding: 6px;
   }
   .home-page .content .video .overlay a .outer,
+  .page-page .content .video .overlay a .outer,
   .landing-two-page .content .video .overlay a .outer,
   .contact-page .content .video .overlay a .outer,
   .error-page .content .video .overlay a .outer,
@@ -1728,6 +1845,7 @@ footer p {
     height: 68px;
   }
   .home-page .content .video .overlay a .inner,
+  .page-page .content .video .overlay a .inner,
   .landing-two-page .content .video .overlay a .inner,
   .contact-page .content .video .overlay a .inner,
   .error-page .content .video .overlay a .inner,
@@ -1738,6 +1856,7 @@ footer p {
     height: 58px;
   }
   .home-page .content .video .overlay a .inner span,
+  .page-page .content .video .overlay a .inner span,
   .landing-two-page .content .video .overlay a .inner span,
   .contact-page .content .video .overlay a .inner span,
   .error-page .content .video .overlay a .inner span,
@@ -1748,6 +1867,7 @@ footer p {
     font-size: 18px;
   }
   .home-page .content .video iframe,
+  .page-page .content .video iframe,
   .landing-two-page .content .video iframe,
   .contact-page .content .video iframe,
   .error-page .content .video iframe,
@@ -1757,6 +1877,7 @@ footer p {
     height: 224px;
   }
   .home-page .content header,
+  .page-page .content header,
   .landing-two-page .content header,
   .contact-page .content header,
   .error-page .content header,
@@ -1765,6 +1886,7 @@ footer p {
     padding: 10px 0;
   }
   .home-page .content header .logo,
+  .page-page .content header .logo,
   .landing-two-page .content header .logo,
   .contact-page .content header .logo,
   .error-page .content header .logo,
@@ -1773,6 +1895,7 @@ footer p {
     font-size: 40px;
   }
   .home-page .content header ul,
+  .page-page .content header ul,
   .landing-two-page .content header ul,
   .contact-page .content header ul,
   .error-page .content header ul,
@@ -1782,6 +1905,7 @@ footer p {
     top: 5px;
   }
   .home-page .content header .text-right .icon,
+  .page-page .content header .text-right .icon,
   .landing-two-page .content header .text-right .icon,
   .contact-page .content header .text-right .icon,
   .error-page .content header .text-right .icon,
@@ -1790,6 +1914,7 @@ footer p {
     display: none;
   }
   .home-page .content .follow,
+  .page-page .content .follow,
   .landing-two-page .content .follow,
   .contact-page .content .follow,
   .error-page .content .follow,
@@ -1800,6 +1925,7 @@ footer p {
 }
 @media (max-width: 479px) {
   .home-page .content,
+  .page-page .content,
   .landing-two-page .content,
   .contact-page .content,
   .error-page .content,
@@ -1808,6 +1934,7 @@ footer p {
     padding-bottom: 20px;
   }
   .home-page .content h1,
+  .page-page .content h1,
   .landing-two-page .content h1,
   .contact-page .content h1,
   .error-page .content h1,
@@ -1817,6 +1944,7 @@ footer p {
     padding: 0;
   }
   .home-page .content header,
+  .page-page .content header,
   .landing-two-page .content header,
   .contact-page .content header,
   .error-page .content header,
@@ -1825,6 +1953,7 @@ footer p {
     padding: 10px 0;
   }
   .home-page .content header .logo,
+  .page-page .content header .logo,
   .landing-two-page .content header .logo,
   .contact-page .content header .logo,
   .error-page .content header .logo,
@@ -1833,6 +1962,7 @@ footer p {
     font-size: 30px;
   }
   .home-page .content header .text-right,
+  .page-page .content header .text-right,
   .landing-two-page .content header .text-right,
   .contact-page .content header .text-right,
   .error-page .content header .text-right,
@@ -1841,6 +1971,7 @@ footer p {
     padding-left: 0;
   }
   .home-page .content header .text-right a,
+  .page-page .content header .text-right a,
   .landing-two-page .content header .text-right a,
   .contact-page .content header .text-right a,
   .error-page .content header .text-right a,
@@ -1849,6 +1980,7 @@ footer p {
     font-size: 30px;
   }
   .home-page .content header .text-right ul,
+  .page-page .content header .text-right ul,
   .landing-two-page .content header .text-right ul,
   .contact-page .content header .text-right ul,
   .error-page .content header .text-right ul,
@@ -1857,6 +1989,7 @@ footer p {
     top: 2px;
   }
   .home-page .content header .text-right ul li a,
+  .page-page .content header .text-right ul li a,
   .landing-two-page .content header .text-right ul li a,
   .contact-page .content header .text-right ul li a,
   .error-page .content header .text-right ul li a,
@@ -1866,6 +1999,7 @@ footer p {
     padding: 4px 4px;
   }
   .home-page .content .mockup-img,
+  .page-page .content .mockup-img,
   .landing-two-page .content .mockup-img,
   .contact-page .content .mockup-img,
   .error-page .content .mockup-img,
@@ -1874,6 +2008,7 @@ footer p {
     margin: 10px auto;
   }
   .home-page .content .video,
+  .page-page .content .video,
   .landing-two-page .content .video,
   .contact-page .content .video,
   .error-page .content .video,
@@ -1883,6 +2018,7 @@ footer p {
     padding: 6px;
   }
   .home-page .content .video .overlay,
+  .page-page .content .video .overlay,
   .landing-two-page .content .video .overlay,
   .contact-page .content .video .overlay,
   .error-page .content .video .overlay,
@@ -1894,6 +2030,7 @@ footer p {
     height: 147px;
   }
   .home-page .content .video .overlay a,
+  .page-page .content .video .overlay a,
   .landing-two-page .content .video .overlay a,
   .contact-page .content .video .overlay a,
   .error-page .content .video .overlay a,
@@ -1906,6 +2043,7 @@ footer p {
     padding: 6px;
   }
   .home-page .content .video .overlay a .outer,
+  .page-page .content .video .overlay a .outer,
   .landing-two-page .content .video .overlay a .outer,
   .contact-page .content .video .overlay a .outer,
   .error-page .content .video .overlay a .outer,
@@ -1915,6 +2053,7 @@ footer p {
     height: 68px;
   }
   .home-page .content .video .overlay a .inner,
+  .page-page .content .video .overlay a .inner,
   .landing-two-page .content .video .overlay a .inner,
   .contact-page .content .video .overlay a .inner,
   .error-page .content .video .overlay a .inner,
@@ -1925,6 +2064,7 @@ footer p {
     height: 58px;
   }
   .home-page .content .video .overlay a .inner span,
+  .page-page .content .video .overlay a .inner span,
   .landing-two-page .content .video .overlay a .inner span,
   .contact-page .content .video .overlay a .inner span,
   .error-page .content .video .overlay a .inner span,
@@ -1935,6 +2075,7 @@ footer p {
     font-size: 18px;
   }
   .home-page .content .video iframe,
+  .page-page .content .video iframe,
   .landing-two-page .content .video iframe,
   .contact-page .content .video iframe,
   .error-page .content .video iframe,

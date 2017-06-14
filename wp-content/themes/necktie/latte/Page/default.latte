@@ -3,7 +3,6 @@
 
 {block content}
     <section class="content">
-        <div class="photo" style="background-image: url({$basePath}/resources/img/blog-photo.png);"></div>
         <div class="filter"></div>
         <div class="container">
             <header class="row">
@@ -22,16 +21,12 @@
                     </a>
                 </div>
             </header>
-            <div class="row">
-                <div class="span-large-24">
-                    <h1>{$post->post_title}</h1>
-                </div>
-            </div>
         </div>
     </section>
 
-    <section>
+    <section class="page-content">
         <div class="container">
+            <h1>{$post->post_title}</h1>
             {$post->post_content}
         </div>
     </section>

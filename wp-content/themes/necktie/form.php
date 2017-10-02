@@ -18,7 +18,7 @@ $rendererMessage = $renderer->renderToString('email', [
 ]);
 
 \wp_mail(
-    'jancar@modpreneur.com',
+    'gregor@modpreneur.com',
     $name,
     $rendererMessage
 );
